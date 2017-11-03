@@ -39,7 +39,7 @@ cifar_caffe_directory = os.path.abspath('cifar_10_caffe_hdf5/')
 if not os.path.exists(cifar_caffe_directory):
 
     def unpickle(file):
-        import cPickle
+        import  _pickle as cPickle
         fo = open(file, 'rb')
         dict = cPickle.load(fo)
         fo.close()
